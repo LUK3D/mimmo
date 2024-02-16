@@ -1,15 +1,15 @@
-# 🤖MIMMO - AI✨
+# 🤖MImmo - AI✨
 
 > ⚠️ WARNING: This project is under development and many changes will be done
 > untill reaching the final goal.
 
-Feel free to contribute with dcoumentation, suggestions, coding or testing it on
-your machine.
+Feel free to contribute with documentation, suggestions, code or testing it on
+your.
 
 ### Overview
 
 Mimmo is a general purpose AI assistent that can do anything you want. It can
-borwse the internet, chat with your friends, manage your emails or even your
+browse the internet, chat with your friends, manage your emails or even your
 computer.
 
 This Repository containes the source code for the desktop cliente and the web
@@ -37,17 +37,17 @@ To run LLM Locally
 
 ---
 
-I used flutter because I want Mimmo to have OS level access so it can interact
-with computer resources and file system. This makes it more powerfull the other
+I choose flutter because I want Mimmo to have OS level access so it can interact
+with computer resources and file system. This makes it more powerfull then other
 assistents.
 
 The web interface is used for the main panel UI and for the browser (chrome)
 native speech to text trasncription so the user can speak with Mimmo without the
-need to use another AI ai
+need of another AI ai
 
-> This can be replaced with whisper in the feature.
+> This can be replaced with Whisper in the feature.
 
-Pocketbase is an awesome realtime database that the user can use locally so we
+Pocketbase is an awesome realtime database that the user can use locally because we
 won't going to store users personal information in the cloud.
 
 ## Basic structure: `Ongoing...`
@@ -61,3 +61,10 @@ won't going to store users personal information in the cloud.
 - ❌ - Not done yet.
 - 🔃 - Working on it
 - ✅ - Done.
+
+## Example of a Mimmo Command flow
+
+This diagram shows in hight level how a task can be handled by mimmo.
+
+![Mimmo command flow example](screenshots/command_flow_example.png)
+
