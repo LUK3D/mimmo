@@ -54,7 +54,7 @@ won't going to store users personal information in the cloud.
 
 | Feature          | Description                                                   | State |
 | ---------------- | ------------------------------------------------------------- | ----- |
-| Web Interface    | Integrate the webclient to the Desktop Client                 | 🔃    |
+| Web Interface    | Integrate the web interface to the Desktop Client             | 🔃    |
 | Visual Interface | Create the main panel where users can create Plugins/Commands | ❌    |
 | Core Nodes       | Create The core nodes that can be used to interact with Mimmo | ❌    |
 
