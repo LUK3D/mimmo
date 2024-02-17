@@ -12,10 +12,29 @@ Mimmo is a general purpose AI assistent that can do anything you want. It can
 browse the internet, chat with your friends, manage your emails or even your
 computer.
 
+![Mimmo Web Client Command Editor](screenshots/command_editor_01.png)
+
+> Command editor where the community can create commands that can be run by
+> mimmo.
+
 This Repository containes the source code for the desktop cliente and the web
 interface of the Mimmo project.
 
 ## Project structure
+
+### Branches
+
+There are three important branches in this repo.
+
+`desktop-client` The development branch for the OS related features (The Flutter
+project)
+
+`web-interface` The development branch for the UI and voice commands.
+
+`master` Contains the most updated version of the `web-interface` and the
+`desktop-client`.
+
+---
 
 The project is divided in 3 main Parts:
 
@@ -47,8 +66,8 @@ need of another AI ai
 
 > This can be replaced with Whisper in the feature.
 
-Pocketbase is an awesome realtime database that the user can use locally because we
-won't going to store users personal information in the cloud.
+Pocketbase is an awesome realtime database that the user can use locally because
+we won't going to store users personal information in the cloud.
 
 ## Basic structure: `Ongoing...`
 
@@ -67,4 +86,3 @@ won't going to store users personal information in the cloud.
 This diagram shows in hight level how a task can be handled by mimmo.
 
 ![Mimmo command flow example](screenshots/command_flow_example.png)
-
