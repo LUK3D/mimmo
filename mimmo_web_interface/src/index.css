@@ -18,3 +18,9 @@ body,
   height: 100vh;
   overflow: hidden;
 }
+
+
+.grid-grdient {
+  background-image: radial-gradient(#d8cece 5%, transparent 0);
+  background-size: 22px 22px;
+}
