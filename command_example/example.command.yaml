@@ -1,0 +1,39 @@
+command:
+  tigger: "check whatsap messages"
+  description: "Cheking user messages"
+  #In preload, you can put any type of code you want to be loading in the broser instance
+  preLoad: ""
+  nodes:
+    #Navigate to whastapp
+    - type: "browser"
+      id: "000-000-000-001"
+      data: "https://web.whatsapp.com"
+      action: "go_to"
+      endCondition: "on_page_loaded"
+    #Checking if the user is loggedin
+    - type: "browser"
+      #Here we pass the javascript function that we will run in the browser to check if the user is not authenticated
+      id: "000-000-000-002"
+      data: "document.getElementById('#element_with_logout_information')"
+      action: "run_code"
+      #To send the result to mimmo, the nexStep() function must be called from javascript.
+      #The arguments must be the result of the function
+      endCondition: "next_step_invoke"
+    #Use the condition node to check if the return value from the browser is false, meaning that the user
+    #Is not loggedin
+    - type: "condition"
+      id: "000-000-000-003"
+      value: "true"
+      equalTo: "{000-000-000-002:response}"
+      ifFalse: "{000-000-000-002}"
+      ifTrue: "{000-000-000-004}"
+    #Use javascript to get all the messages from whastap
+    - type: "browser"
+      id: "000-000-000-004"
+      data: "document.getElementById('#messages_elemnt').innerText"
+      action: "run_code"
+      endCondition: "next_step_invoke"
+    - type: "output"
+      id: "000-000-000-005"
+      source: "chat"
+      data: "{000-000-000-004:response}"
