@@ -1,4 +1,4 @@
-import { TCommandNode, TCommandNodeTypes } from "../types";
+import { TCommandNode, TCommandNodeTypes } from "../../utils/types";
 
 import NodeList from './components/node_list';
 
