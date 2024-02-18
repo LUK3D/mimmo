@@ -69,3 +69,5 @@ dist-ssr
 *.njsproj
 *.sln
 *.sw?
+*/generated_plugin_registrant.cc
+*/generated_plugins.cmake
