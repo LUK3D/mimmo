@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { TCommandNode, TCommandNodeTypes } from "../../types";
+import { TCommandNode, TCommandNodeTypes } from "../../../utils/types";
 
 export default function NodeList({nodes}:{nodes:Array<TCommandNode>}) {
     const [expanded, setExtapnded] = useState(true);
