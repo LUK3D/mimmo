@@ -17,6 +17,18 @@ class MimmoWebView extends StatelessWidget {
               permissionRequested: controller.onPermissionRequested,
             ),
           )),
+      floatingActionButton: Obx(
+        () => Visibility(
+          visible: controller.listening.value,
+          child: FloatingActionButton.small(
+              backgroundColor: Theme.of(context).primaryColor,
+              foregroundColor: Colors.white,
+              onPressed: () {},
+              child: const Icon(
+                Icons.volume_up_outlined,
+              )),
+        ),
+      ),
     );
   }
 }
