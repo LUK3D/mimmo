@@ -30,7 +30,7 @@ migrate_working_dir/
 .flutter-plugins-dependencies
 .pub-cache/
 .pub/
-/build/
+mimmo_desktop_client/build/
 
 # Symbolication related
 app.*.symbols
@@ -39,9 +39,10 @@ app.*.symbols
 app.*.map.json
 
 # Android Studio will place build artifacts here
-/android/app/debug
-/android/app/profile
-/android/app/release
+mimmo_desktop_client/android/app/debug
+mimmo_desktop_client/android/app/profile
+mimmo_desktop_client/android/app/release
+mimmo_desktop_client/client
 
 #------------------------------- FOR WEB INTERFACE ---------------------------------
 
